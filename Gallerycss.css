@@ -33,6 +33,67 @@ html, body {
     background-position: center;
     background-size: cover;
 }
+#YurinaGallery {
+    background-image: url("https://pbs.twimg.com/media/GXr1aOEbwAAKvue?format=jpg&name=4096x4096");
+    background-position: center;
+    background-size: cover;
+}
+#TifanyGallery {
+    background-image: url("https://pbs.twimg.com/media/GbX7NdZawAA8olD?format=jpg&name=large");
+    background-position: center;
+    background-size: cover;
+
+}
+#SuzuhaGallery {
+    background-image: url("https://pbs.twimg.com/media/Ga3F539bIAAn-vQ?format=jpg&name=large");
+    background-position: center;
+    background-size: cover;
+
+}
+#CocoaGallery {
+    background-image: url("https://pbs.twimg.com/media/GZYBqKGbcAAvNmn?format=jpg&name=4096x4096");
+    background-position: center;
+    background-size: cover;
+
+}
+#AndeaGallery {
+    background-image: url("https://pbs.twimg.com/media/GWW90kFXAAEKkfD?format=jpg&name=4096x4096");
+    background-position: center;
+    background-size: cover;
+
+}
+#AndeaGallery {
+    background-image: url("https://pbs.twimg.com/media/GWW90kFXAAEKkfD?format=jpg&name=4096x4096");
+    background-position: center;
+    background-size: cover;
+
+}
+#KhalisGallery {
+    background-image: url("https://pbs.twimg.com/media/Ga7256IaMAAGPAf?format=jpg&name=large");
+    background-position: center;
+    background-size: cover;
+
+}
+#HillaryGallery {
+    background-image: url("https://pbs.twimg.com/media/GbTYSePbIAA9vXH?format=jpg&name=large");
+    background-position: center;
+    background-size: cover;
+
+}
+#HarukaGallery {
+    background-image: url("https://pbs.twimg.com/media/Ga9RijgaUAAk6lD?format=jpg&name=4096x4096");
+    background-position: center;
+    background-size: cover;
+
+}
+#SalwaGallery {
+    background-image: url("https://pbs.twimg.com/media/GVuV9z3a8AABkn5?format=jpg&name=4096x4096");
+    background-position: center;
+    background-size: cover;
+
+}
+
+
 /* Content container to fill available space */
 .container {
     flex: 1;
@@ -114,7 +175,8 @@ h2 {
     margin-bottom: 30px;
     font-size: 2em;
     color: #ffffff;
-    
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 /* Gallery Container */
@@ -212,7 +274,7 @@ button:hover {
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 40%;
+    max-width: 45%;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
