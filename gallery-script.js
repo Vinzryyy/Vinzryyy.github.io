@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const galleryImages = document.querySelectorAll(".DeviGallery img");
+    const galleryImages = document.querySelectorAll(".MainMemberGallery img");
     const modal = document.getElementById("modal");
     const modalImg = document.getElementById("modalImg");
     const captionText = document.getElementById("caption");
