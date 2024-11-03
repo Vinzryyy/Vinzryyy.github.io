@@ -21,9 +21,18 @@ html, body {
     background-image: url("https://pbs.twimg.com/media/GbVmV2fbcAAhdjf?format=jpg&name=large");
     background-position: center;
     background-size: cover;
-
 }
 
+#YishyanGallery {
+    background-image: url("https://pbs.twimg.com/media/GXnJ_sKbcAA2nXP?format=jpg&name=4096x4096");
+    background-position: center;
+    background-size: cover;
+}
+#LucineGallery {
+    background-image: url("https://pbs.twimg.com/media/GbIiTy8awAAOm9A?format=jpg&name=large");
+    background-position: center;
+    background-size: cover;
+}
 /* Content container to fill available space */
 .container {
     flex: 1;
@@ -203,7 +212,7 @@ button:hover {
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 80%;
+    max-width: 40%;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
@@ -288,50 +297,9 @@ footer {
     transform: scale(1.05);
     transition: 0.5s transform ease;
 }
-/* Navbar Styling */
-.navbar {
-    background: linear-gradient(135deg, #333, #444);
-    color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 10px 0;
-}
 
-.navbar nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
 
-.navbar nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 10px;
-    position: relative;
-    transition: color 0.3s ease;
-    font-size: 1em;
-}
 
-.navbar nav ul li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    height: 2px;
-    background-color: #ff6347;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
 
-.navbar nav ul li a:hover {
-    color: #ff6347;
-}
 
-.navbar nav ul li a:hover::after {
-    transform: scaleX(1);
-}
+
