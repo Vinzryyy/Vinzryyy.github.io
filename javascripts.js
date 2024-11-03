@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextBtn = document.getElementById("next");
     const navLinks = document.querySelectorAll("nav ul li a");
     const sections = document.querySelectorAll(".section");
+    const homeSection = document.querySelector('home')
     let currentIndex = 0;
 
 
@@ -25,6 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
             event.preventDefault();  // Prevent default anchor behavior
             const sectionId = link.getAttribute("data-section");
             showSection(sectionId);  // Show selected section
+
+            if(sectionId === 'gallery') {
+                homeSection.style.display = "none"
+            }
         });
     });
     // Close modal
@@ -40,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.addEventListener("DOMContentLoaded", () => {
         const galleryImages = document.querySelectorAll("#gallery .container img");
-    
+
         galleryImages.forEach((img) => {
             img.addEventListener("click", () => {
                 if (img.id === "devi-photo") {
