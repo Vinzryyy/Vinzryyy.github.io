@@ -11,7 +11,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const homeSection = document.querySelector('home')
     let currentIndex = 0;
 
-
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+    const totalSlides = slides.length;
+    document.querySelector(".prev").addEventListener("click", () => changeSlide(-1));
+    document.querySelector(".next").addEventListener("click", () => changeSlide(1));
+    
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+            slide.style.opacity = "0";
+            slide.style.display = "none"; // Hide all slides
+        });
+        slides[index].classList.add("active");
+        slides[index].style.opacity = "1";
+        slides[index].style.display = "flex"; // Show the current slide
+    }
+    
+    function changeSlide(direction) {
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+        showSlide(currentSlide);
+    }
+    
+    // Auto-slide every 5 seconds
+    setInterval(() => changeSlide(1), 10000);
+    
+    // Initialize the first slide as visible
+    showSlide(currentSlide);
+    
     
   // Function to show the selected section
     function showSection(sectionId) {

@@ -65,24 +65,66 @@ section {
     display: none;
 }
 
+/* Home Section Styling */
 #home {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    color: #fff;
+
     padding: 80px 20px;
-    display: block; /* Show home section by default */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
+/* Title Styling */
 #home h1 {
-    font-size: 2.5em;
+    font-size: clamp(2em, 5vw, 3em); /* Responsive font sizing */
     margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    color: #7f1414;
 }
 
+/* Paragraph Styling */
 #home p {
-    font-size: 1.2em;
+    font-size: clamp(1em, 2.5vw, 1.5em); /* Responsive font sizing */
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.8;
+    color: #00844f;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Subtle overlay */
+    backdrop-filter: blur(5px); /* Smoothens background for readability */
 }
+
+/* Animations */
+#home h1, #home p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Title Animation Delay */
+#home h1 {
+    animation-delay: 0.2s;
+}
+
+#home p {
+    animation-delay: 0.4s;
+}
+
+/* Keyframes for Smooth Entrance Animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 /* Gallery Styling */
 #gallery {
@@ -118,7 +160,7 @@ h2 {
 .container img:hover {
     transform: scale(2.05);
     transition: 0.5s transform ease;
-    border: 2px solid #ff6347;
+    border: 2px solid #d6391d;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
@@ -214,19 +256,22 @@ button:hover {
 }
 
 /* Slide Controls */
+/* Add high z-index to navigation buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
+    transform: translateY(-50%);
+    color: #fff;
     font-size: 30px;
-    transition: 0.3s;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
     border-radius: 5px;
-    user-select: none;
+    transition: background-color 0.3s;
+    z-index: 10; /* Ensure buttons are above images */
 }
+
 
 .prev {
     left: 10px;
@@ -322,4 +367,85 @@ footer {
 
 .navbar nav ul li a:hover::after {
     transform: scaleX(1);
+}
+/* Basic Styling */
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    opacity: 0;
+    display: none; /* Hide inactive slides */
+    transition: opacity 0.5s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.slide img {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.slide img:hover {
+    transform: scale(1.05); /* Slightly reduced zoom effect */
+    z-index: 1; /* Keep the zoomed image below the buttons */
+}
+.slide.active {
+    opacity: 1;
+    display: flex; /* Show the active slide */
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    z-index: 10; /* Ensure buttons are above images */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }

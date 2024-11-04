@@ -26,10 +26,39 @@
             </ul>
         </nav>
     </header>
-
+<main>
     <!-- Main content container -->
     <div class="container">
+        
         <section id="home" class="section">
+            <div id="slider" class="slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <img src="Public Image/Amanda.jpeg" alt="Amanda">
+                        <div class="slide-caption">
+                            <h2>Slide 1</h2>
+                            <p>Some description for slide 1.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Public Image/Salwa.jpeg" alt="Salwa">
+                        <div class="slide-caption">
+                            <h2>Slide 2</h2>
+                            <p>Some description for slide 2.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Public Image/Lucine.JPG" alt="Lucine">
+                        <div class="slide-caption">
+                            <h2>Slide 3</h2>
+                            <p>Some description for slide 3.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
+            </div>
+
             <h1>Life in Focus: Moments & Memories</h1>
             <p>Every moment is a memory, and every memory tells a story worth capturing.</p>
         </section>
@@ -81,7 +110,7 @@
             <p>Hello! I’m a passionate photographer who loves capturing the beauty of the world. Explore my work through this gallery and feel free to reach out!</p>
         </section>
     </div>
-
+</main>
     <footer>
         <p>&copy; 2024 Vinzryyy Gallery</p>
     </footer>
