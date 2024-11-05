@@ -381,7 +381,7 @@ footer {
 
 .slider-container {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
 }
 
 .slide {
@@ -448,4 +448,56 @@ footer {
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.7);
+}
+/* Enhanced H2 Styling */
+#home .h2a {
+    font-size: clamp(1.2em, 3vw, 1.8em); /* Responsive font sizing */
+    color: #ffd3a5; /* Soft contrasting color */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px; /* Space between h2 and paragraph */
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+/* Decorative Underline Effect */
+#home .h2a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 60%;
+    height: 3px;
+    background-color: #ff6347; /* Accent color for underline */
+    opacity: 0.8;
+    transition: width 0.3s ease;
+}
+
+/* Hover Effect for H2 */
+#home .h2a:hover::after {
+    width: 100%; /* Expands underline on hover */
+}
+
+/* Paragraph Styling - Description Box */
+#home .p1 {
+    font-size: clamp(0.9em, 1.8vw, 1.1em); /* Smaller responsive font sizing */
+    max-width: 500px; /* Smaller width to fit more sentences */
+    margin: 0 auto;
+    padding: 10px 15px; /* Reduced padding for compactness */
+    line-height: 1.4; /* Tighter line height */
+    color: #f9f9f9;
+    border-left: 3px solid #ff6347; /* Thinner left border */
+    background: rgba(255, 255, 255, 0.08); /* Lighter background for subtle contrast */
+    border-radius: 4px; /* Smaller radius for tighter look */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12); /* Slight shadow for depth */
+    font-weight: 300;
+    text-align: left; /* Left-aligned text */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Description Box */
+#home .p1:hover {
+    transform: scale(1.01); /* Slight zoom on hover for interactivity */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
