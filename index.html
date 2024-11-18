@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="description" content="The Gallery of #MyKLPAdventure ">
@@ -12,10 +12,15 @@
     <meta name="twitter:creator" content="@Vinzryyy">
     <meta name="twitter:text:title" content="">
     <title>Vinzryyy Gallery</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="style.css">
     <script src="javascripts.js" defer></script>
 </head>
-<body>
+<body background="./Public Image/poster.jpg" style="background-size:contain;
+    background-position:center;">
     <header class="navbar">
         <nav>
             <ul>
@@ -26,25 +31,25 @@
             </ul>
         </nav>
     </header>
-<main>
+<main >
     <!-- Main content container -->
     <div class="container">
-        
         <section id="home" class="section">
+            <h1> KLP48 Event list </h1>
             <div id="slider" class="slider">
                 <div class="slider-container">
                     <div class="slide active">
                         <a href="Firstcry2024.html"><img src="https://pbs.twimg.com/media/GVRpmEEb0AANSOQ?format=jpg&name=large" alt="ZEEP"></a>
                         <div class="slide-caption">
                             <h2 class ="h2a">AKB48 Group Live First cry</h2>
-                            <p class="p1">international concert was held on August 18, 2024 in Zepp Kuala Lumpur Including AKB48,STU48,JKT48,Quadlips,KLP48</p>
+                            <p class="p1">international concert was held on August 18, 2024 in Zepp Kuala Lumpur Including AKB48 , STU48 , JKT48 , Quadlips , KLP48 </p>
                         </div>
                     </div>
                     <div class="slide">
                         <img src="https://pbs.twimg.com/media/GW3oBXOXwAA9vNK?format=jpg&name=large" alt="AniManGaki"> 
                         <div class="slide-caption">
                             <h2 class ="h2a">AniManGaki 2024</h2>
-                            <p class="p1">One of Malaysia’s most anticipated annual celebrations of animation, comics, and gaming (ACG),</p>
+                            <p class="p1">One of Malaysia’s most anticipated annual celebrations of animation, comics, and gaming (ACG)</p>
                         </div>
                     </div>
                     <div class="slide">
@@ -74,7 +79,7 @@
                 <button class="next" onclick="changeSlide(1)">❯</button>
             </div>
 
-            <h1>Life in Focus: Moments & Memories</h1>
+            <h2>Life in Focus: Moments & Memories</h2>
             <p>Every moment is a memory, and every memory tells a story worth capturing.</p>
         </section>
 
@@ -121,14 +126,42 @@
         </section>
 
         <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Hello! I’m a passionate photographer who loves capturing the beauty of the world. Explore my work through this gallery and feel free to reach out!</p>
+            <div class="about-container">
+              <h2 class="section-title">About Me</h2>
+              <p class="about-text">
+                Hello! I’m a passionate <strong>photographer</strong> who loves capturing the beauty of the world. 
+                From serene landscapes to candid moments, every shot tells a story. 
+                Explore my work through this gallery and feel free to <a href="#contact">reach out</a>!
+              </p>
+            </div>
+          </section>
+        <section id="contact" class="section">
+            <div>
+                <p class="about-text">
+                    Hello! I’m a passionate <strong>photographer</strong> who loves capturing the beauty of the world. 
+                    From serene landscapes to candid moments, every shot tells a story. 
+                    Explore my work through this gallery and feel free to <a href="#contact">reach out</a>!
+                  </p>
+            </div>
+
         </section>
     </div>
 </main>
-    <footer>
+<footer>
+    <div class="footer-container">
         <p>&copy; 2024 Vinzryyy Gallery</p>
-    </footer>
+        <div class="social-icons">
+            <a href="https://x.com/Vinzryyy" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/_malvn_/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
 
     <!-- Modal Structure -->
     <div id="modal" class="modal">
