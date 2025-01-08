@@ -116,10 +116,17 @@ section {
 /* Paragraph Styling */
 #home p {
     font-size: clamp(1em, 2.5vw, 1.5em); /* Responsive font sizing */
+<<<<<<< HEAD
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.8;
     color: #00844f;
+=======
+        max-width:max-content;
+    margin:  auto;
+    line-height: 1.0;
+    color: #ffffff;
+>>>>>>> 375f04f0af28c9129e30d152d4f74c1b4a26867a
     padding: 10px 20px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1); /* Subtle overlay */
