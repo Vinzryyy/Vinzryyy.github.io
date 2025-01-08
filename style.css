@@ -15,13 +15,6 @@ html, body {
     color: #333;
     font-family: "Poppins", sans-serif;
 }
-
-
-/* Content container to fill available space */
-.container {
-    flex: 1;
-}
-
 a:visited {
     color: #e5533d;
 }
@@ -114,16 +107,17 @@ section {
 }
 
 /* Paragraph Styling */
-#home p {
+#home p , pre{
     font-size: clamp(1em, 2.5vw, 1.5em); /* Responsive font sizing */
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.8;
-    color: #00844f;
+    margin:  auto;
+    line-height: 1.0;
+    color: #ffffff;
     padding: 10px 20px;
-    border-radius: 10px;
     background: rgba(255, 255, 255, 0.1); /* Subtle overlay */
     backdrop-filter: blur(5px); /* Smoothens background for readability */
+    transition: border 0.3s ease;
+    
+
 }
 
 /* Animations */
@@ -138,7 +132,7 @@ section {
     animation-delay: 0.2s;
 }
 
-#home p {
+#home p,pre {
     animation-delay: 0.4s;
 }
 
