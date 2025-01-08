@@ -12,82 +12,84 @@ html, body {
     flex-direction: column;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+
     color: #333;
     font-family: "Poppins", sans-serif;
 }
 
 #DeviGallery {
-    background-image: url("https://pbs.twimg.com/media/GbVmV2fbcAAhdjf?format=jpg&name=large");
+    background-image: url("./Public Image/devikimono.jpg ");
     background-position: center;
     background-size: cover;
+    
 }
 
 #YishyanGallery {
-    background-image: url("https://pbs.twimg.com/media/GXnJ_sKbcAA2nXP?format=jpg&name=4096x4096");
+    background-image: url("https://pbs.twimg.com/media/GbtsdhBasAEKJvU?format=jpg&name=large");
     background-position: center;
     background-size: cover;
 }
 #LucineGallery {
-    background-image: url("https://pbs.twimg.com/media/GbIiTy8awAAOm9A?format=jpg&name=large");
-    background-position: center;
-    background-size: cover;
+    background-image: url("https://pbs.twimg.com/media/GeWSJCObwAAXsdI?format=jpg&name=large"); 
+    background-position: cover;
+    background-size:contain;
+   
 }
 #YurinaGallery {
-    background-image: url("https://pbs.twimg.com/media/GXr1aOEbwAAKvue?format=jpg&name=4096x4096");
+    background-image: url("https://pbs.twimg.com/media/GgaiMwkawAA61y3?format=jpg&name=large");
     background-position: center;
     background-size: cover;
 }
 #TifanyGallery {
-    background-image: url("https://pbs.twimg.com/media/GbX7NdZawAA8olD?format=jpg&name=large");
+    background-image: url("https://pbs.twimg.com/media/GXxJzWTakAUm_1T?format=jpg&name=large");
     background-position: center;
     background-size: cover;
 
 }
 #SuzuhaGallery {
-    background-image: url("https://pbs.twimg.com/media/Ga3F539bIAAn-vQ?format=jpg&name=large");
+    background-image: url("https://pbs.twimg.com/media/GgSJq8wbkAA_VfX?format=jpg&name=large");
     background-position: center;
     background-size: cover;
 
 }
 #CocoaGallery {
-    background-image: url("https://pbs.twimg.com/media/GZYBqKGbcAAvNmn?format=jpg&name=4096x4096");
+    background-image: url("https://pbs.twimg.com/media/GgI2kWNbYAkvXcV?format=jpg&name=large");
     background-position: center;
     background-size: cover;
 
 }
 #AndeaGallery {
-    background-image: url("https://pbs.twimg.com/media/GWW90kFXAAEKkfD?format=jpg&name=4096x4096");
-    background-position: center;
-    background-size: cover;
-
-}
-#AndeaGallery {
-    background-image: url("https://pbs.twimg.com/media/GWW90kFXAAEKkfD?format=jpg&name=4096x4096");
+    background-image: url("https://pbs.twimg.com/media/Gd6F4vDbsAAZO5z?format=jpg&name=large");
     background-position: center;
     background-size: cover;
 
 }
 #KhalisGallery {
-    background-image: url("https://pbs.twimg.com/media/Ga7256IaMAAGPAf?format=jpg&name=large");
+    background-image: url("./Public Image/khaliss.jpg");
     background-position: center;
     background-size: cover;
 
 }
 #HillaryGallery {
-    background-image: url("https://pbs.twimg.com/media/GbTYSePbIAA9vXH?format=jpg&name=large");
+    background-image: url("https://pbs.twimg.com/media/GfYOimHbEAEG7Uj?format=jpg&name=large");
     background-position: center;
     background-size: cover;
 
 }
 #HarukaGallery {
-    background-image: url("https://pbs.twimg.com/media/Ga9RijgaUAAk6lD?format=jpg&name=4096x4096");
+    background-image: url("https://pbs.twimg.com/media/GdG14AGaAAAREHq?format=jpg&name=large");
+    background-position: center;
+    background-size: cover;
+
+}
+#AmandaGallery {
+    background-image: url("https://pbs.twimg.com/media/GdkSBHkWQAAQ5K_?format=jpg&name=medium");
     background-position: center;
     background-size: cover;
 
 }
 #SalwaGallery {
-    background-image: url("https://pbs.twimg.com/media/GVuV9z3a8AABkn5?format=jpg&name=4096x4096");
+    background-image: url("https://pbs.twimg.com/media/GfPJ_XxbsAAlxS-?format=jpg&name=large");
     background-position: center;
     background-size: cover;
 
@@ -205,16 +207,6 @@ h2 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-/* About & Contact Section */
-#about, #contact {
-    background: #f9f9f9;
-    padding: 60px 0;
-}
-
-p {
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-}
 
 /* Form Styling */
 form {
@@ -327,7 +319,6 @@ button:hover {
 /* Footer */
 footer {
     background: #222;
-    color: #fff;
     text-align: center;
     padding: 20px 0;
     font-size: 0.9em;
