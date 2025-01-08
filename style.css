@@ -109,7 +109,6 @@ section {
 /* Paragraph Styling */
 #home p , pre{
     font-size: clamp(1em, 2.5vw, 1.5em); /* Responsive font sizing */
-        max-width:max-content;
     margin:  auto;
     line-height: 1.0;
     color: #ffffff;
