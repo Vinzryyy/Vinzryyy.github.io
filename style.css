@@ -19,7 +19,9 @@ html, body {
 
 /* Content container to fill available space */
 .container {
-    flex: 1;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 a:visited {
@@ -328,21 +330,23 @@ button:hover {
     transition: transform 0.3s ease;
     height: 150px;
 }
-
 .MemberGallery img:hover {
-    transform: scale(1.05);
-    transition: 0.5s transform ease;
+    transform: scale(1.08);
+    border: 2px solid #ff6347;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
+
 /* Navbar Styling */
 .navbar {
-    background: linear-gradient(135deg, #333, #444);
-    color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background: rgba(34, 34, 34, 0.85);
+    backdrop-filter: blur(8px);
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 1000;
-    padding: 10px 0;
+    transition: background 0.3s ease;
 }
+
 
 .navbar nav ul {
     list-style: none;
@@ -426,13 +430,15 @@ button:hover {
 
 .slide-caption {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    border-radius: 0 0 10px 10px;
 }
+
 
 /* Navigation Buttons */
 .prev, .next {
@@ -551,6 +557,83 @@ footer p:hover {
 }
 
 .social-icons a:hover {
-    color: #ff6347; /* Highlight color on hover */
-    transform: scale(1.2); /* Enlarge icon on hover */
+  color: #ff6347;
+    text-shadow: 0 0 10px rgba(255, 99, 71, 0.7);
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    background: #eaf3f5;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h5 {
+    color: #777;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    margin: 15px 0;
+    color: #222;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.buttons a {
+    padding: 12px 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #00bfa6;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #009c85;
+}
+
+.btn-secondary {
+    background: #fff;
+    border: 2px solid #00bfa6;
+    color: #00bfa6;
+}
+
+.btn-secondary:hover {
+    background: #00bfa6;
+    color: #fff;
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Event Slider below Hero */
+.event-slider {
+    padding: 40px 10%;
+    text-align: center;
+}
+.event-slider h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #222;
 }
